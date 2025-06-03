@@ -7,7 +7,7 @@ RUN mkdir -p $HOME
 WORKDIR $HOME
 ADD . $HOME
 RUN chmod +x mvnw
-RUN --mount=type=cache,target=/root/.m2 ./mvnw -f $HOME/pom.xml clean package
+RUN --mount=type=cache,id=maven-cache,target=/root/.m2 ./mvnw -f $HOME/pom.xml clean package
 
 #
 # Package stage
