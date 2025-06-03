@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA - BagiBagi</title>
+	
+	<meta property="fb:app_id" content="1686086531669768">
+	<meta property="og:description" content="#DiBikinSimpel Berbagi Rezeki di Momen Spesial">
+	<meta property="og:site_name" content="www.bca.co.id">
+	<meta property="og:image" content="https://www.bca.co.id/-/media/Feature/News/Edukatips/2022/07/20220727-Edukatips-Berbagi-di-Momen-Spesial-DibikinSimpel-dengan-BagiBagi-di-BCA-mobile-banner.jpg">
+	<meta property="og:title" content="BCA - BagiBagi">
+
+    <meta property="al:ios:url" content="com.myApp://main">
+    <meta property="al:ios:app_store_id" content="551587254" />
+    <meta property="al:ios:app_name" content="BCA mobile"/>
+    <meta property="al:web:should_fallback" content="false">
+
+    <meta property="al:android:url" content="org.amber.asparagus.applink://deeplink" />
+    <meta property="al:android:package" content="org.amber.asparagus.applink" />
+    <meta property="al:android:app_name" content="AndroidApplink" />
+
+	<meta name="description" content="Bagi bagi THR lebih mudah melalui fitur BagiBagi di aplikasi BCA Mobile. Bisa kirim uang dengan jumlah sama rata (fixed) atau berbeda-beda (random)">
+	<meta name="keywords" content="BCA - BagiBagi, BCA Mobile, berbagi, bagi bagi uang, Bagi bagi, bagi-bagi, mudah berbagi, Bagi bagi, Anak muda">
+
+
+	<meta property="twitter:site" content="@bankBCA">
+	<meta property="twitter:image" content="https://www.bca.co.id/-/media/Images/campaign/2023/Ramadan-Tenang/Bagibagi/bagibagi-ramadan-banner-desktop.jpg">
+	<meta property="twitter:description" content="Bagi bagi THR lebih mudah melalui fitur BagiBagi di aplikasi BCA Mobile. Bisa kirim uang dengan jumlah sama rata (fixed) atau berbeda-beda (random)">
+	<meta property="twitter:title" content="BCA - BagiBagi"><meta property="twitter:card" content="summary">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background: linear-gradient(180deg, #5B6BBE 30%, #41C6DF 100%);
+            color: white;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 375px;
+            margin: 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            background-color: transparent;
+        }
+        .image-box {
+            width: 100%;
+            height: 375px; /* Fixed square size */
+            overflow: hidden;
+            border-radius: 12px; /* Rounded corners */
+        }
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-container {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .banner-container img {
+            display: none;
+            width: 100%;
+            border-radius: 12px; /* Rounded corners for banners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .banner-container img.active {
+            display: block;
+        }
+        .cta-section {
+            margin: 30px 20px;
+            padding: 20px;
+            background: white; /* White background for readability */
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+        .cta-section h2 {
+            font-size: 1.8rem;
+            color: #333; /* Dark text color for title */
+            margin-bottom: 10px;
+        }
+        .cta-section p {
+            font-size: 1rem;
+            color: #666; /* Gray color for supporting text */
+            margin-bottom: 20px;
+        }
+        .cta-section button {
+            background: white;
+            color: #5B6BBE;  /* Blue text color */
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            border: 2px solid #5B6BBE;  /* Blue border */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s;
+            width: 250px !important;;
+            margin-top: 15px !important;;
+        }
+        .cta-section button:hover {
+            background: #5B6BBE;  /* Blue background on hover */
+            color: white; /* White text on hover */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Main Image -->
+        <div class="image-box">
+            <img src="/assets/bagi-bagi-banner.jpg" alt="Main Image">
+        </div>
+        
+        <!-- Banner Slider -->
+        <div class="banner-container">
+            <img class="banner active" src="/assets/bagi-bagi-banner-1.jpg" alt="Banner 1">
+            <img class="banner" src="/assets/bagi-bagi-banner-2.jpg" alt="Banner 2">
+            <img class="banner" src="/assets/bagi-bagi-banner-3.jpg" alt="Banner 3">
+            <img class="banner" src="/assets/bagi-bagi-banner-4.jpg" alt="Banner 4">
+        </div>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <h2>BagiBagi di BCA mobile</h2>
+        <p>BCA menghadirkan fitur BagiBagi, fitur berbagi uang melalui aplikasi BCA mobile dengan teman/keluarga yang memiliki aplikasi Sakuku. Jumlah uang yang dibagikan bisa sama rata (Fixed), atau berbeda-beda (Random).</p>
+
+
+        <!-- for android case to break from facebook in-app-browser-->
+        <!--<button onclick="openDeeplink()">Coba Sekarang</button>-->
+
+        <!-- for ios case to break from facebook in-app-browser-->
+        <a th:href="${deeplinkUrl}">
+            <button>Coba Sekarang!</button>
+        </a>
+
+        <a href="https://deeplinkdemo.onrender.com/deeplinkfallback/puipuipupsicle">
+			<button>Download App</button>
+		</a>
+
+    </div>
+
+    <script>
+        let banners = document.querySelectorAll('.banner-container img');
+        let currentIndex = 0;
+
+        setInterval(() => {
+            banners[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % banners.length;
+            banners[currentIndex].classList.add('active');
+        }, 3000);
+
+        function openDeeplink() {
+            try {
+                console.log("Try opening deeplink");
+                var customScheme = "intent://deeplink/path#Intent;scheme=org.amber.asparagus.applink;package=org.amber.asparagus.applink;end"
+                const link = document.createElement('a'); // Create an <a> element
+                link.href = customScheme;                         // Set the URL
+                link.click();
+            } catch (error) {
+                var fallbackUrl = "https://deeplinkdemo.onrender.com/deeplinkfallback/puipuipup"
+                const fallbackLink = document.createElement('a'); // Create an <a> element
+                fallbackLink.href = fallbackUrl;                         // Set the URL
+                fallbackLink.click();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "org.amber.asparagus.applink",
+    "sha256_cert_fingerprints":
+    ["11:33:7B:FE:7D:52:BF:99:BA:82:5A:92:5F:0B:48:09:EF:DE:DE:F9:0C:A3:64:46:87:72:41:DD:F6:0E:1B:48"]
+  }
+}]
